@@ -22,10 +22,6 @@ void output(splay_tree *tree) {
 
 int main() {
     splay_tree *tree = new_tree(&compare_int);
-    // int n;
-    // printf("Введите кол-во переменнных в n\n");
-    // scanf("%d",&n);
-    // printf("%d",n);
     int values[] = {3, 4, 1, 2, 8, 5, 7};
     output(tree);
     for(int i = 0; i < 7; i++) {
