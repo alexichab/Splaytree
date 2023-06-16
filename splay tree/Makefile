@@ -1,3 +1,8 @@
-example: example.c splay.o
+all: main
+.PHONY: main
+main: main.c splay.c
+	gcc -Wall -Wextra -o $@ $^
 
-splay.o: 
+.PHONY: clean
+clean:
+	rm -rf main
